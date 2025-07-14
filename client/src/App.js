@@ -34,8 +34,8 @@ function App() {
     <div
       className="main-wrapper"
       style={{
-        backgroundImage: url('https://images.pexels.com/photos/23547/pexels-photo.jpg'),
-      }}
+  backgroundImage: `url('https://images.pexels.com/photos/23547/pexels-photo.jpg')`,
+}}
     >
       <div className="container">
         <div className="wrapper">
