@@ -8,8 +8,8 @@ function App() {
 
   const fileInputRef = useRef();
 
-  const url =
-    "https://i.pinimg.com/originals/16/46/24/1646243661201a0892cc4b1a64fcbacf.jpg";
+  // const url =
+  //   "https://i.pinimg.com/originals/16/46/24/1646243661201a0892cc4b1a64fcbacf.jpg";
 
   useEffect(() => {
     const getImage = async () => {
@@ -50,9 +50,10 @@ function App() {
           />
           <p>The shareable link will be generated here</p>
 
-          <a href={result} target="_blank">
-            {result}
-          </a>
+          <a href={result} target="_blank" rel="noreferrer">
+  {result}
+</a>
+
         </div>
       </div>
     </div>
