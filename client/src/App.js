@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import { uploadFile } from "./service/api";
@@ -8,9 +7,6 @@ function App() {
   const [result, setResult] = useState("");
 
   const fileInputRef = useRef();
-
-  // const url =
-  //   "https://i.pinimg.com/originals/16/46/24/1646243661201a0892cc4b1a64fcbacf.jpg";
 
   useEffect(() => {
     const getImage = async () => {
@@ -34,8 +30,8 @@ function App() {
     <div
       className="main-wrapper"
       style={{
-  backgroundImage: `url('https://images.pexels.com/photos/23547/pexels-photo.jpg')`,
-}}
+        backgroundImage: `url('https://images.pexels.com/photos/23547/pexels-photo.jpg')`
+      }}
     >
       <div className="container">
         <div className="wrapper">
@@ -54,7 +50,6 @@ function App() {
           <a href={result} target="_blank" rel="noreferrer">
   {result}
 </a>
-
         </div>
       </div>
     </div>
